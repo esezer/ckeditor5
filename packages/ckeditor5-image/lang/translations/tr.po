@@ -98,7 +98,7 @@ msgstr ""
 
 msgctxt "The label of the form submit button if the image source URL input has no value."
 msgid "Insert"
-msgstr ""
+msgstr "Ekle"
 
 msgctxt "The label of the form submit button if the image source URL input has a value."
 msgid "Update"
@@ -106,8 +106,8 @@ msgstr "Güncelle"
 
 msgctxt "The input label for the Insert image via URL form."
 msgid "Insert image via URL"
-msgstr ""
+msgstr "URL ile resim ekle"
 
 msgctxt "The input label for the Insert image via URL form for a pre-existing image."
 msgid "Update image URL"
-msgstr ""
+msgstr "Resim URL düzenle"
