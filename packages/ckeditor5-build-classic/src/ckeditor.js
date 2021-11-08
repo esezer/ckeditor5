@@ -158,10 +158,14 @@ ClassicEditor.defaultConfig = {
 			'specialCharacters',
 			'MathType',
 			'ChemType',
-			'mshape',
+			'mshape'
 		],
 		shouldNotGroupWhenFull: true,
-		viewportTopOffset: 30,
+	},
+	ui: {
+		viewportOffset: {
+			top: 30,
+		},
 	},
 	image: {
 		resizeUnit: '%',
@@ -216,6 +220,43 @@ ClassicEditor.defaultConfig = {
 			'tableProperties',
 		],
 	},
+	// typing: {
+	// 	transformations: {
+	// 		remove: [
+	// 			// Do not use the transformations from the
+	// 			// 'symbols' and 'quotes' groups.
+	// 			'symbols',
+	// 			'quotes',
+
+	// 			// As well as the following transformations.
+	// 			'arrowLeft',
+	// 			'arrowRight',
+	// 		],
+
+	// 		extra: [
+	// 			// Add some custom transformations – e.g. for emojis.
+	// 			{ from: ':)', to: '🙂' },
+	// 			{ from: ':+1:', to: '👍' },
+	// 			{ from: ':tada:', to: '🎉' },
+
+	// 			// You can also define patterns using regular expressions.
+	// 			// Note: The pattern must end with `$` and all its fragments must be wrapped
+	// 			// with capturing groups.
+	// 			// The following rule replaces ` "foo"` with ` «foo»`.
+	// 			{
+	// 				from: /(^|\s)(")([^"]*)(")$/,
+	// 				to: [null, '«', null, '»'],
+	// 			},
+
+	// 			// Finally, you can define `to` as a callback.
+	// 			// This (naive) rule will auto-capitalize the first word after a period, question mark, or an exclamation mark.
+	// 			{
+	// 				from: /([.?!] )([a-z])$/,
+	// 				to: (matches) => [null, matches[1].toUpperCase()],
+	// 			},
+	// 		],
+	// 	},
+	// },
 	language: 'tr',
 	additionalLanguages: ['en'],
 	licenseKey: 'LGHUXP296.YQA941LTE291',
