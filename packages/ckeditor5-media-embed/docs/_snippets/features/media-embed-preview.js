@@ -7,8 +7,7 @@
 
 import { CS_CONFIG } from '@ckeditor/ckeditor5-cloud-services/tests/_utils/cloud-services-config';
 
-const IFRAME_SRC = '//cdn.iframe.ly/api/iframe';
-const API_KEY = 'febab8169e71e501ae2e707f55105647';
+const IFRAME_SRC = '//ckeditor.iframe.ly/api/iframe';
 
 ClassicEditor
 	.create( document.querySelector( '#snippet-media-embed-preview' ), {
@@ -26,7 +25,7 @@ ClassicEditor
 					url: /.+/,
 					html: match => {
 						const url = match[ 0 ];
-						const iframeUrl = IFRAME_SRC + '?app=1&key=' + API_KEY + '&url=' + encodeURIComponent( url );
+						const iframeUrl = IFRAME_SRC + '?app=1&url=' + encodeURIComponent( url );
 
 						return (
 							'<div class="iframely-embed">' +
@@ -57,13 +56,14 @@ ClassicEditor
 	} );
 
 // For a totally unknown reason, Travis and Vimeo do not like each other and the test fail on CI.
+// Ignore errors from Facebook as well
 const metaElement = document.createElement( 'meta' );
 
 metaElement.name = 'x-cke-crawler-ignore-patterns';
 metaElement.content = JSON.stringify( {
-	'request-failure': 'vimeo.com',
-	'response-failure': 'vimeo.com',
-	'console-error': [ '<svg> attribute preserveAspectRatio', 'vimeo.com' ]
+	'request-failure': [ 'vimeo.com', 'facebook.com' ],
+	'response-failure': [ 'vimeo.com', 'facebook.com' ],
+	'console-error': [ '<svg> attribute preserveAspectRatio', 'vimeo.com', 'facebook.com', 'ErrorUtils' ]
 } );
 
 document.head.appendChild( metaElement );

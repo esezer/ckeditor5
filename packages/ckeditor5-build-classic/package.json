@@ -1,6 +1,6 @@
 {
   "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "30.0.0",
+  "version": "31.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -51,10 +51,10 @@
     "@wiris/mathtype-ckeditor5": "^7.27.1"
   },
   "devDependencies": {
-    "@ckeditor/ckeditor5-core": "^30.0.0",
+    "@ckeditor/ckeditor5-core": "^31.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^25.4.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^25.0.0",
-    "@ckeditor/ckeditor5-theme-lark": "^30.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^31.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
