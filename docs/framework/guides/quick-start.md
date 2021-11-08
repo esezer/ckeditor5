@@ -10,7 +10,7 @@ This guide will show you how to initialize CKEditor 5 rich-text editor from sour
 ## How to install the framework?
 
 <info-box>
-	We are currently working on a [package generator](https://www.npmjs.com/package/ckeditor5-package-generator) that will automate the steps described in this guide. And you can test it already. Remember to [share your feedback](https://ckeditor.com/contact/) with us.
+	We are currently developing a [package generator](https://www.npmjs.com/package/ckeditor5-package-generator) that will automate the steps described in this guide. You can test it already. Remember to [share your feedback](https://ckeditor.com/contact/) with us.
 
 	Use the following command to create a new package:
 	```bash
@@ -23,7 +23,7 @@ The CKEditor 5 Framework consist of several [npm packages](https://npmjs.com). T
 * [Node.js](https://nodejs.org/en/) 12.0.0+
 * npm 5.7.1+ (**note:** some npm 5+ versions were known to cause [problems](https://github.com/npm/npm/issues/16991), especially with deduplicating packages; upgrade npm when in doubt)
 
-Besides Node.js and npm you also need [webpack@4](https://webpack.js.org) with a few additional packages to use the framework. They are needed to bundle the source code. Read more about building CKEditor 5 in the {@link builds/guides/integration/advanced-setup CKEditor 5 Builds Advanced setup} guide.
+Besides Node.js and npm you also need [webpack@4](https://webpack.js.org) with a few additional packages to use the framework. They are needed to bundle the source code. Read more about building CKEditor 5 in the {@link builds/guides/integration/advanced-setup CKEditor 5 builds Advanced setup} guide.
 
 <!-- TODO replace the link above when the Framework will get its own building guide. -->
 
